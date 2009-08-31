@@ -64,7 +64,7 @@ task :test => [:test_rcovrt]
 
 desc "install by setup.rb"
 task :install do
-  sh "sudo ruby setup.rb install"
+  sh "sudo ruby setup.rb"
 end
 
 task :default => :test
