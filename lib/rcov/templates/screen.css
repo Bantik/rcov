@@ -103,7 +103,6 @@
   table.report th {
     background: #666666;
     color: #ffffff;
-    text-align: right;
     text-transform: uppercase;
     font-size: .8em;
     font-weight: bold;
@@ -119,12 +118,12 @@
   }
   
   th.left_align, td.left_align {
-    text-align: left !important;
+    text-align: left;
   }
   
   th.right_align, td.right_align {
     text-align: right;
-    padding-right: 2em !important;
+    padding-right: 2em;
   }
   
   table.report th.header:hover {
@@ -142,17 +141,6 @@
     margin-left: 1em;
   }
 
-  table.report tr.summary_row {
-    background: #cccccc;
-    border: 1px solid #cccccc;
-  }
-
-  table.report tr.summary_row td {
-    padding-left: .2em !important;
-    color: #333333;
-    font-weight: bold;
-  }
-  
   table.report td {
     padding: .2em .5em .2em .5em;
   }
@@ -160,21 +148,21 @@
   table.report td a {
     text-decoration: none;
   }
-  
-  table.report tbody tr:hover {
-    background: #cccccc !important;
-  }
-  
-  table.report tr.summary_row td {
-    border-bottom: 1px solid #aaaaaa;
-  }
 
   table.report tr {
-    background-color: #eeeeee;
+    background-color: #fcfcfc;
+  }
+
+  table.report tbody tr:hover {
+    background-color: #fefefe;
   }
 
   table.report tr.odd {
-    background-color: #dddddd;
+    background-color: #f2f2f2;
+  }
+
+  table.report tbody tr.odd:hover {
+    background-color: #f4f4f4;
   }
 
 /* @end */
@@ -182,7 +170,7 @@
 /* @group Percentage Graphs */
 
   div.percent_graph_legend {
-    width: 5.5em;
+    width: 4.5em;
     float: left;
     margin: .5em 1em .5em 0em;
     height: 1em;
@@ -195,7 +183,7 @@
     empty-cells: show;
     padding: 0px;
     border-collapse: collapse;
-    width: 100px !important;
+    width: 100px;
     float: left;
     margin: .5em 1em .5em 0em;
   }
@@ -203,7 +191,7 @@
   div.percent_graph div {
   	float: left;
     height: 1em;
-    padding: 0px !important;
+    padding: 0px;
   }  
 
   div.percent_graph div.covered {
