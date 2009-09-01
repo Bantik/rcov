@@ -74,7 +74,7 @@
     <p>Generated on <%= generated_on %> with <a href="<%= rcov::UPSTREAM_URL %>">rcov <%= rcov::VERSION %></a></p>
 
     <script type="text/javascript">
-      $(document).ready(function(){$("#report_table").tablesorter({widgets: ['zebra'], textExtraction: 'complex'});});
+      $(function(){$("#report_table").tablesorter({widgets: ['zebra'], textExtraction: 'complex'});});
       $('.filter').change(function(){
         ff = $('#file_filter').val();
         cf = $('#coverage_filter').val();

@@ -78,7 +78,7 @@ module Rcov
       end
 
       def name
-        "TOTAL" 
+        "TOTAL"
       end
     end
 
