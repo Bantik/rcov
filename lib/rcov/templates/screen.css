@@ -3,8 +3,8 @@
   body {
     font-family: Verdana, Helvetica, Arial, Sans-Serif;
     font-size: 12px;
-    color: #4C4C4C;
-    background-color: #F4F2ED;
+    color: #444444;
+    background-color: #F6F4F2;
     padding: 1em;
   }
   
@@ -29,7 +29,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0em 0em 1em 0em;
-    color: #666666;
+    color: #444444;
   }
   
   h1 { 
@@ -44,8 +44,8 @@
   
   fieldset {
     display: inline;
-    border: 0px;
-    padding: 0px;
+    border: 0;
+    padding: 0;
     margin-right: 1em;
   }
   
@@ -168,42 +168,45 @@
 /* @end */
 
 /* @group Percentage Graphs */
+  .coverage_stats {
+    color: inherit;
+    width: 15em;
+  }
 
-  div.percent_graph_legend {
+  .percent_graph_legend {
     width: 4.5em;
     float: left;
-    margin: .5em 1em .5em 0em;
+    margin: .5em .5em .5em 0em;
     height: 1em;
     line-height: 1em;
   }
   
-  div.percent_graph {
+  .percent_graph {
     height: 1em;
     border: #333333 1px solid;
-    empty-cells: show;
     padding: 0px;
-    border-collapse: collapse;
     width: 100px;
     float: left;
     margin: .5em 1em .5em 0em;
   }
 
-  div.percent_graph div {
-  	float: left;
+  .percent_graph span {
+    float: left;
     height: 1em;
     padding: 0px;
   }  
 
-  div.percent_graph div.covered {
-    background: #649632;
+  .percent_graph .covered {
+    background-color: #649632;
   }
   
-  div.percent_graph div.uncovered {
-    background: #a92730;
+  .percent_graph .uncovered {
+    background-color: #a92730;
+    padding: 0;
   }
   
-  div.percent_graph div.NA {
-    background: #eaeaea;
+  .percent_graph .NA {
+    background-color: #eaeaea;
   }
   
 /* @end */

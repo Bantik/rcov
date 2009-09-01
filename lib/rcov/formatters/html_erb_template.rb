@@ -24,11 +24,11 @@ module Rcov
       end
       
       def code_coverage_html(code_coverage_percentage, is_total=false)
-        %{<div class="percent_graph_legend"><tt class='#{ is_total ? 'coverage_total' : ''}'>#{ "%3.2f" % code_coverage_percentage }%</tt></div>
-          <div class="percent_graph">
-            <div class="covered" style="width:#{ code_coverage_percentage.round }px"></div>
-            <div class="uncovered" style="width:#{ 100 - code_coverage_percentage.round }px"></div>
-          </div>}
+        %{<tt class="percent_graph_legend #{ is_total ? 'coverage_total' : ''}">#{ "%3.2f" % code_coverage_percentage }%</tt>
+          <span class="percent_graph">
+            <span class="covered" style="width:#{ code_coverage_percentage.round }px"></span>
+            <span class="uncovered" style="width:#{ 100 - code_coverage_percentage.round }px"></span>
+          </span>}
       end
 
       def file_filter_classes(file_path)
